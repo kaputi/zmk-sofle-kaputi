@@ -1,12 +1,22 @@
-
 name: Build ZMK Firmware
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      board: nice_nano_v2
-      shield: sofle
-      keymap: sofle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - uses: Swatinem/rust-cache@v2
+      - uses: ncaq/ [email protected]
+      - name: Build
+        uses: zmkfirmware/actions-zmk-build@v1
+        with:
+          board: nice_nano_v2
+          shield: sofle
+          keymap: sofle
 
