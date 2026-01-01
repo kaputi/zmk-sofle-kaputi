@@ -29,7 +29,7 @@
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp F34 F33>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         lower_layer {
@@ -48,7 +48,7 @@
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp F34 F33>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         raise_layer {
@@ -67,7 +67,7 @@
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp F34 F33>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
     };
 };
