@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h> 
+
+// &ext_power EP_ON &ext_power EP_OFF 
 
 / {
     keymap {
@@ -61,7 +64,7 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤                                 ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
           &trans        &trans        &trans          &trans          &trans         &trans                                              &trans          &trans          &trans         &trans          &trans          &trans
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────╮ ╭───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-     &studio_unlock     &trans        &trans          &trans          &trans         &trans              &trans          &trans          &trans         &trans          &trans           &trans         &trans          &trans
+     &studio_unlock     &trans        &trans          &trans          &trans         &trans              &trans          &trans          &trans         &trans          &trans           &trans         &trans        &ext_power EP_TOG
 // ╰───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤ ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┼───────────────────────────────╯
                                       &trans          &trans          &trans         &trans              &trans          &trans          &trans         &trans          &trans           &trans
 //                                 ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯ ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
