@@ -49,7 +49,6 @@
 //                                 ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯ ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(MINUS) LC(EQUAL)>;
         };
 
@@ -68,8 +67,8 @@
 //                                 ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯ ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(MINUS) LC(EQUAL)>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(MINUS) LC(EQUAL)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGTH;
         };
 
         raise_layer {
@@ -87,8 +86,8 @@
 //                                 ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯ ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
             >;
 
-            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(MINUS) LC(EQUAL)>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(MINUS) LC(EQUAL)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGTH;
         };
 
         lock_layer {
